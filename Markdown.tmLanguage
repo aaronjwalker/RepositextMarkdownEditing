@@ -274,6 +274,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#attr-list</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#inline</string>
 				</dict>
 				<dict>
@@ -1363,6 +1367,10 @@
 					<array>
 						<dict>
 							<key>include</key>
+							<string>#attr-list</string>
+						</dict>
+						<dict>
+							<key>include</key>
 							<string>#inline</string>
 						</dict>
 						<dict>
@@ -1902,6 +1910,73 @@
 					<string>punctuation.definition.tag.end.html</string>
 				</dict>
 			</dict>
+		</dict>
+		<key>attr-list</key>
+		<dict>
+			<key>name</key>
+			<string>meta.attr-list.markdown</string>
+			<key>contentName</key>
+			<string>meta.attr-list.content.markdown</string>
+			<key>begin</key>
+			<string>(?&lt;!\\)(\{:)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.attr-list.begin.markdown</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?&lt;!\\)(\})</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.attr-list.end.markdown</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>meta.attr-list.class.markdown</string>
+					<key>match</key>
+					<string>(?&lt;=[\s:\w])\.[\w\-]+(?=[\s}.#])</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>meta.attr-list.id.markdown</string>
+					<key>match</key>
+					<string>(?&lt;=[\s:\w])#[\w\-]+(?=[\s}.])</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>meta.attr-list.attr.markdown</string>
+					<key>match</key>
+					<string>(?&lt;=[\s:])([\w\-]+)=(("[^"]*")|('[^']*')|([^\s"'}]+))(?=[\s}.#])</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>meta.attr-list.attr-name.markdown</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>meta.attr-list.attr-value.markdown</string>
+						</dict>
+					</dict>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>meta.attr-list.space.markdown</string>
+					<key>match</key>
+					<string>\s+</string>
+				</dict>
+			</array>
 		</dict>
 	</dict>
 	<key>scopeName</key>

@@ -1056,6 +1056,82 @@
                 <string>#FD971F</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List</string>
+            <key>scope</key>
+            <string>meta.attr-list.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#555555</string>
+                <key>background</key>
+                <string>#EDE9D3</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List Inner</string>
+            <key>scope</key>
+            <string>meta.attr-list.content.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#F8F8F0</string>
+                <key>background</key>
+                <string>#F92672</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List (Class)</string>
+            <key>scope</key>
+            <string>meta.attr-list.class.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#EA992E</string>
+                <key>background</key>
+                <string>#EDE9D3</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List (ID)</string>
+            <key>scope</key>
+            <string>meta.attr-list.id.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#3EB722</string>
+                <key>background</key>
+                <string>#EDE9D3</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List (Attribute)</string>
+            <key>scope</key>
+            <string>meta.attr-list.attr.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#8B00CC</string>
+                <key>background</key>
+                <string>#EDE9D3</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List (Whitespace)</string>
+            <key>scope</key>
+            <string>meta.attr-list.space.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#EDE9D3</string>
+            </dict>
+        </dict>
     </array>
     <key>uuid</key>
     <string>BF4E1964-0DB9-4E88-8142-E8F52D7EDEEC</string>
