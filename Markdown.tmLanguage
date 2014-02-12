@@ -703,7 +703,7 @@
 		<key>escape</key>
 		<dict>
 			<key>match</key>
-			<string>\\[-`*_#+.!(){}\[\]\\&gt;]</string>
+			<string>\\[-`*_#+.!(){}\[\]\\&gt;@%]</string>
 			<key>name</key>
 			<string>constant.character.escape.markdown</string>
 		</dict>
