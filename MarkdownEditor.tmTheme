@@ -1032,9 +1032,9 @@
         </dict>
         <dict>
             <key>name</key>
-            <string>Invalid Markers</string>
+            <string>Error</string>
             <key>scope</key>
-            <string>markup.marker.invalid.markdown</string>
+            <string>error.markdown</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -1045,9 +1045,9 @@
         </dict>
         <dict>
             <key>name</key>
-            <string>Uncertain Markers</string>
+            <string>Warning</string>
             <key>scope</key>
-            <string>markup.marker.uncertain.markdown</string>
+            <string>warning.markdown</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>

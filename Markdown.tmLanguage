@@ -895,14 +895,14 @@
 			<key>match</key>
 			<string>(?:(?&lt;=[^\s%@])(?:%|@)+|(?&lt;=\w)(?:%|@)(?=\w))</string>
 			<key>name</key>
-			<string>markup.marker.invalid.markdown</string>
+			<string>error.markdown</string>
 		</dict>
 		<key>uncertain-markers</key>
 		<dict>
 			<key>match</key>
 			<string>(?:%|@)(?!\S)</string>
 			<key>name</key>
-			<string>markup.marker.uncertain.markdown</string>
+			<string>warning.markdown</string>
 		</dict>
 		<key>inline</key>
 		<dict>
