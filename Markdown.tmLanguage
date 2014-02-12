@@ -71,6 +71,10 @@
 			</array>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>#divider</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>^[ ]{0,3}([*+-])(?=\s)</string>
 			<key>captures</key>
@@ -1996,6 +2000,30 @@
 			<string>error.markdown</string>
 			<key>match</key>
 			<string>(\x{0000}|\x{0001}|\x{0002}|\x{0003}|\x{0004}|\x{0005}|\x{0006}|\x{0007}|\x{0008}|\x{000B}|\x{000C}|\x{000E}|\x{000F}|\x{0010}|\x{0011}|\x{0012}|\x{0013}|\x{0014}|\x{0015}|\x{0016}|\x{0017}|\x{0018}|\x{0019}|\x{001A}|\x{001B}|\x{001C}|\x{001D}|\x{001E}|\x{001F}|\x{007F}|\x{0080}|\x{0081}|\x{0082}|\x{0083}|\x{0084}|\x{0085}|\x{0086}|\x{0087}|\x{0088}|\x{0089}|\x{008A}|\x{008B}|\x{008C}|\x{008D}|\x{008E}|\x{008F}|\x{0090}|\x{0091}|\x{0092}|\x{0093}|\x{0094}|\x{0095}|\x{0096}|\x{0097}|\x{0098}|\x{0099}|\x{009A}|\x{009B}|\x{009C}|\x{009D}|\x{009E}|\x{009F}|\x{00AD}|\x{2000}|\x{2001}|\x{2002}|\x{2003}|\x{2004}|\x{2005}|\x{2006}|\x{2007}|\x{2008}|\x{2009}|\x{200A}|\x{200B}|\x{200C}|\x{200D}|\x{200E}|\x{200F}|\x{2029}|\x{202A}|\x{202B}|\x{202C}|\x{202D}|\x{202E}|\x{202F}|\x{205F}|\x{2060}|\x{2061}|\x{2062}|\x{2063}|\x{2064}|\x{2066}|\x{2067}|\x{2068}|\x{2069}|\x{206A}|\x{206B}|\x{206C}|\x{206D}|\x{206E}|\x{206F}|\x{3000}|\x{FD90}|\x{FD91}|\x{FDD0}|\x{FDD1}|\x{FDD2}|\x{FDD3}|\x{FDD4}|\x{FDD5}|\x{FDD6}|\x{FDD7}|\x{FDD8}|\x{FDD9}|\x{FDDA}|\x{FDDB}|\x{FDDC}|\x{FDDD}|\x{FDDE}|\x{FDDF}|\x{FDE0}|\x{FDE1}|\x{FDE2}|\x{FDE3}|\x{FDE4}|\x{FDE5}|\x{FDE6}|\x{FDE7}|\x{FDE8}|\x{FDE9}|\x{FDEA}|\x{FDEB}|\x{FDEC}|\x{FDED}|\x{FDEE}|\x{FDEF}|\x{FE00}|\x{FE01}|\x{FE02}|\x{FE03}|\x{FE04}|\x{FE05}|\x{FE06}|\x{FE07}|\x{FE08}|\x{FE09}|\x{FE0A}|\x{FE0B}|\x{FE0C}|\x{FE0D}|\x{FE0E}|\x{FE0F}|\x{FFF0}|\x{FFF1}|\x{FFF2}|\x{FFF3}|\x{FFF4}|\x{FFF5}|\x{FFF6}|\x{FFF7}|\x{FFF8}|\x{FFF9}|\x{FFFA}|\x{FFFB}|\x{FFFC}|\x{FFFD}|\x{FFFE}|\x{FFFF})</string>
+		</dict>
+		<key>divider</key>
+		<dict>
+			<key>name</key>
+			<string>meta.divider.markdown</string>
+			<key>begin</key>
+			<string>^(\^\^\^)\s*(?=\{)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.divider.markdown</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>$</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#attr-list</string>
+				</dict>
+			</array>
 		</dict>
 	</dict>
 	<key>scopeName</key>

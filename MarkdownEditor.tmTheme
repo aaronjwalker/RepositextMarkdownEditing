@@ -1132,6 +1132,19 @@
                 <string>#EDE9D3</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Subdocument Divider</string>
+            <key>scope</key>
+            <string>punctuation.definition.divider.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>
+                <key>background</key>
+                <string>#8B00CC</string>
+            </dict>
+        </dict>
     </array>
     <key>uuid</key>
     <string>BF4E1964-0DB9-4E88-8142-E8F52D7EDEEC</string>
