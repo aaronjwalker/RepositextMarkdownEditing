@@ -1946,7 +1946,7 @@
 			<key>contentName</key>
 			<string>meta.attr-list.content.markdown</string>
 			<key>begin</key>
-			<string>(?&lt;=(?:^|[*_`)\]^]))(\{:)</string>
+			<string>(?&lt;=(?:^|[*_`)\]^]))(\{:([\w\d]\w*:)?)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
