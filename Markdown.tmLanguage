@@ -2048,7 +2048,7 @@
 			<key>name</key>
 			<string>meta.divider.markdown</string>
 			<key>begin</key>
-			<string>^(\^\^\^)\s*(?=\{)</string>
+			<string>^(\^\^\^)\s*</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
