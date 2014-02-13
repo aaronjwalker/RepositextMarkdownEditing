@@ -746,7 +746,15 @@
 			<key>contentName</key>
 			<string>entity.name.section.markdown</string>
 			<key>end</key>
-			<string>[ \t]*(#*)$</string>
+			<string>[ \t]*(#*)(\{#[\w\-]+\})?$</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>markup.heading.id.markdown</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>markup.heading.markdown</string>
 			<key>patterns</key>
