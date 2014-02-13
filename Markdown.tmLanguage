@@ -2026,10 +2026,8 @@
 		<dict>
 			<key>name</key>
 			<string>error.markdown</string>
-			<key>begin</key>
-			<string>(\{:)</string>
-			<key>end</key>
-			<string>(?&lt;!\\)(\})</string>
+			<key>match</key>
+			<string>(\{:).*?(?&lt;!\\)(\})</string>
 		</dict>
 		<key>empty-attr-list</key>
 		<dict>
