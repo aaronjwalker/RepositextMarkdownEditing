@@ -282,6 +282,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#invalid-attr-list</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#invisible-chars</string>
 				</dict>
 				<dict>
@@ -321,6 +325,10 @@
 					<string>markup.heading.2.markdown</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#invalid-attr-list</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -1383,6 +1391,10 @@
 						</dict>
 						<dict>
 							<key>include</key>
+							<string>#invalid-attr-list</string>
+						</dict>
+						<dict>
+							<key>include</key>
 							<string>#invisible-chars</string>
 						</dict>
 						<dict>
@@ -1994,6 +2006,15 @@
 				</dict>
 			</array>
 		</dict>
+		<key>invalid-attr-list</key>
+		<dict>
+			<key>name</key>
+			<string>error.markdown</string>
+			<key>begin</key>
+			<string>(\{:)</string>
+			<key>end</key>
+			<string>(?&lt;!\\)(\})</string>
+		</dict>
 		<key>invisible-chars</key>
 		<dict>
 			<key>name</key>
@@ -2022,6 +2043,10 @@
 				<dict>
 					<key>include</key>
 					<string>#attr-list</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#invalid-attr-list</string>
 				</dict>
 			</array>
 		</dict>
