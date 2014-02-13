@@ -328,6 +328,12 @@
 					<key>name</key>
 					<string>markup.heading.2.markdown</string>
 				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?&lt;!\\)\*</string>
+					<key>name</key>
+					<string>error.markdown</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -1424,6 +1430,12 @@
 						<dict>
 							<key>include</key>
 							<string>#fenced-code-blocks</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>(?&lt;!\\)\*</string>
+							<key>name</key>
+							<string>error.markdown</string>
 						</dict>
 					</array>
 				</dict>
