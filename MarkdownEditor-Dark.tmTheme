@@ -1006,6 +1006,158 @@
                 <string>#FF420077</string>
             </dict>
         </dict>
+
+        <!-- Styles for custom markdown extensions. -->
+        <dict>
+            <key>name</key>
+            <string>Markers (@)</string>
+            <key>scope</key>
+            <string>markup.marker.at.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#9843ff</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markers (%)</string>
+            <key>scope</key>
+            <string>markup.marker.percent.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#337eff</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Error</string>
+            <key>scope</key>
+            <string>error.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#07070f</string>
+                <key>background</key>
+                <string>#06d98d</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Warning</string>
+            <key>scope</key>
+            <string>warning.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#aaaa55</string>
+                <key>background</key>
+                <string>#0268e0</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List</string>
+            <key>scope</key>
+            <string>meta.attr-list.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#aaaaaa</string>
+                <key>background</key>
+                <string>#12162c</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List Inner</string>
+            <key>scope</key>
+            <string>meta.attr-list.content.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#07070f</string>
+                <key>background</key>
+                <string>#06d98d</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List (Class)</string>
+            <key>scope</key>
+            <string>meta.attr-list.class.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#1566d1</string>
+                <key>background</key>
+                <string>#12162c</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List (ID)</string>
+            <key>scope</key>
+            <string>meta.attr-list.id.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#c148dd</string>
+                <key>background</key>
+                <string>#12162c</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List (Attribute)</string>
+            <key>scope</key>
+            <string>meta.attr-list.attr.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#74ff33</string>
+                <key>background</key>
+                <string>#12162c</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Attribute List (Whitespace)</string>
+            <key>scope</key>
+            <string>meta.attr-list.space.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>background</key>
+                <string>#12162c</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Subdocument Divider</string>
+            <key>scope</key>
+            <string>punctuation.definition.divider.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#000000</string>
+                <key>background</key>
+                <string>#74ff33</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Header ID</string>
+            <key>scope</key>
+            <string>markup.heading.id.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#aaaaaa</string>
+                <key>background</key>
+                <string>#12162c</string>
+            </dict>
+        </dict>
     </array>
     <key>uuid</key>
     <string>BF4E1964-0DB9-4E88-8142-E8F52D7EDEEC</string>
