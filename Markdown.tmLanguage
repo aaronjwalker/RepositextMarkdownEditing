@@ -1974,7 +1974,7 @@
 			<key>contentName</key>
 			<string>meta.attr-list.content.markdown</string>
 			<key>begin</key>
-			<string>(?&lt;=(?:^|[*_`)\]^]))(\{:([\w\d]\w*:)?)</string>
+			<string>(?&lt;=(?:^|[*_`)\]]))(\{:([\w\d]\w*:)?)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1993,6 +1993,50 @@
 					<string>punctuation.definition.attr-list.end.markdown</string>
 				</dict>
 			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#attr-list-inner</string>
+				</dict>
+			</array>
+		</dict>
+		<key>divider-attr-list</key>
+		<dict>
+			<key>name</key>
+			<string>meta.attr-list.markdown</string>
+			<key>contentName</key>
+			<string>meta.attr-list.content.markdown</string>
+			<key>begin</key>
+			<string>(?&lt;=[\^\s])(\{:([\w\d]\w*:)?)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.attr-list.begin.markdown</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?&lt;!\\)(\})</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.attr-list.end.markdown</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#attr-list-inner</string>
+				</dict>
+			</array>
+		</dict>
+		<key>attr-list-inner</key>
+		<dict>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -2075,7 +2119,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#attr-list</string>
+					<string>#divider-attr-list</string>
 				</dict>
 				<dict>
 					<key>include</key>
