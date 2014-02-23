@@ -298,7 +298,7 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#FBE9ADCC</string>
+                <string>#FBE9AD00</string>
                 <key>fontStyle</key>
                 <string>bold</string>
             </dict>
@@ -1016,7 +1016,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#67BC00</string>
+                <string>#96d050</string>
             </dict>
         </dict>
         <dict>
@@ -1027,7 +1027,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#CC8100</string>
+                <string>#e0af61</string>
             </dict>
         </dict>
         <dict>
@@ -1084,13 +1084,26 @@
         </dict>
         <dict>
             <key>name</key>
+            <string>Attribute List Punctuation</string>
+            <key>scope</key>
+            <string>punctuation.definition.attr-list</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ccccff</string>
+                <key>background</key>
+                <string>#ede9d3</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
             <string>Attribute List (Class)</string>
             <key>scope</key>
             <string>meta.attr-list.class.markdown</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#EA992E</string>
+                <string>#ddb277</string>
                 <key>background</key>
                 <string>#EDE9D3</string>
             </dict>
@@ -1103,7 +1116,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#3EB722</string>
+                <string>#88ccc2</string>
                 <key>background</key>
                 <string>#EDE9D3</string>
             </dict>
@@ -1116,7 +1129,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#8B00CC</string>
+                <string>#b2baff</string>
                 <key>background</key>
                 <string>#EDE9D3</string>
             </dict>
@@ -1142,7 +1155,7 @@
                 <key>foreground</key>
                 <string>#FFFFFF</string>
                 <key>background</key>
-                <string>#8B00CC</string>
+                <string>#e8ccf5</string>
             </dict>
         </dict>
         <dict>
