@@ -937,7 +937,7 @@
 		<key>invalid-markers</key>
 		<dict>
 			<key>match</key>
-			<string>(?:(?&lt;=[^\s%@])(?:%|@)+|(?&lt;=\w)(?:%|@)(?=\w))</string>
+			<string>(?:(?&lt;=[^\s%@*])(?:%|@)+|(?&lt;=\w)(?:%|@)(?=\w))</string>
 			<key>name</key>
 			<string>error.markdown</string>
 		</dict>
@@ -1159,6 +1159,18 @@
 				<dict>
 					<key>include</key>
 					<string>#link-ref</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#uncertain-markers</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#invalid-markers</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#markers</string>
 				</dict>
 			</array>
 		</dict>
