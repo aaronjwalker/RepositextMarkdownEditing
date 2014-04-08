@@ -679,6 +679,32 @@
         </dict>
         <dict>
             <key>name</key>
+            <string>Markup: Italic in Strong</string>
+            <key>scope</key>
+            <string>markup.bold.markdown markup.italic.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold italic</string>
+                <key>foreground</key>
+                <string>#705442</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Markup: Strong in Italic</string>
+            <key>scope</key>
+            <string>markup.italic.markdown markup.bold.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>fontStyle</key>
+                <string>bold italic</string>
+                <key>foreground</key>
+                <string>#705442</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
             <string>Markup: Strikethrough</string>
             <key>scope</key>
             <string>
