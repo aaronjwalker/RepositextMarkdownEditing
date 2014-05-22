@@ -556,7 +556,7 @@
                 <key>fontStyle</key>
                 <string>italic</string>
                 <key>foreground</key>
-                <string>#888888</string>
+                <string>#A6E22E</string>
                 <key>background</key>
                 <string>#171717</string>
             </dict>
