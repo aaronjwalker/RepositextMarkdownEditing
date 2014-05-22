@@ -687,7 +687,7 @@
                 <key>fontStyle</key>
                 <string>bold italic</string>
                 <key>foreground</key>
-                <string>#aaaaaa</string>
+                <string>#F92672</string>
             </dict>
         </dict>
         <dict>
@@ -700,7 +700,7 @@
                 <key>fontStyle</key>
                 <string>bold italic</string>
                 <key>foreground</key>
-                <string>#aaaaaa</string>
+                <string>#F92672</string>
             </dict>
         </dict>
         <dict>
