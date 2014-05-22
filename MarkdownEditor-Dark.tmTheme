@@ -1197,6 +1197,17 @@
                 <string>#12162c</string>
             </dict>
         </dict>
+        <dict>
+            <key>name</key>
+            <string>Special chars</string>
+            <key>scope</key>
+            <string>punctuation.special</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFF00</string>
+            </dict>
+        </dict>
     </array>
     <key>uuid</key>
     <string>BF4E1964-0DB9-4E88-8142-E8F52D7EDEEC</string>
