@@ -1064,9 +1064,9 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#07070f</string>
+                <string>#FFFFFF</string>
                 <key>background</key>
-                <string>#06d98d</string>
+                <string>#880000</string>
             </dict>
         </dict>
         <dict>
@@ -1103,9 +1103,9 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#07070f</string>
+                <string>#FFFFFF</string>
                 <key>background</key>
-                <string>#06d98d</string>
+                <string>#880000</string>
             </dict>
         </dict>
         <dict>
