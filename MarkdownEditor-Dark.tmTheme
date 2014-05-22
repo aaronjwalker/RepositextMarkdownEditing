@@ -1149,6 +1149,19 @@
         </dict>
         <dict>
             <key>name</key>
+            <string>Attribute List (DNE="true")</string>
+            <key>scope</key>
+            <string>meta.attr-list.dne.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#AAAA00</string>
+                <key>background</key>
+                <string>#280000</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
             <string>Attribute List (Attribute)</string>
             <key>scope</key>
             <string>meta.attr-list.attr.markdown</string>
