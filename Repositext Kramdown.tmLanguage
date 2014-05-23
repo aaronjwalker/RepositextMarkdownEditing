@@ -1032,6 +1032,12 @@
 					<key>include</key>
 					<string>#special-chars</string>
 				</dict>
+				<dict>
+					<key>name</key>
+					<string>error.markdown</string>
+					<key>match</key>
+					<string>\.\.\.</string>
+				</dict>
 			</array>
 		</dict>
 		<key>italic</key>
