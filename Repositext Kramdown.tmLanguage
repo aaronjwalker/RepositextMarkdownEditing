@@ -1036,7 +1036,7 @@
 					<key>name</key>
 					<string>error.markdown</string>
 					<key>match</key>
-					<string>(\.\.\.|--)</string>
+					<string>(\.\.\.|--|(?&lt;=\s)—|—(?=\s))</string>
 				</dict>
 			</array>
 		</dict>
@@ -2134,7 +2134,7 @@
 			<key>name</key>
 			<string>punctuation.special</string>
 			<key>match</key>
-			<string>—</string>
+			<string>(?&lt;!\s)—(?!\s)</string>
 		</dict>
 		<key>divider</key>
 		<dict>
