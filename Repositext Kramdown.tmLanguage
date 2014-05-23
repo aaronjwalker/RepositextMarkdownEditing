@@ -592,6 +592,10 @@
 					<key>include</key>
 					<string>#link-ref</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#error-cases</string>
+				</dict>
 			</array>
 		</dict>
 		<key>strikethrough</key>
@@ -1033,10 +1037,8 @@
 					<string>#special-chars</string>
 				</dict>
 				<dict>
-					<key>name</key>
-					<string>error.markdown</string>
-					<key>match</key>
-					<string>(\.\.\.|--|(?&lt;=\s)—|—(?=\s))</string>
+					<key>include</key>
+					<string>#error-cases</string>
 				</dict>
 			</array>
 		</dict>
@@ -1181,6 +1183,10 @@
 				<dict>
 					<key>include</key>
 					<string>#markers</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#error-cases</string>
 				</dict>
 			</array>
 		</dict>
@@ -2135,6 +2141,13 @@
 			<string>punctuation.special</string>
 			<key>match</key>
 			<string>(?&lt;!\s)—(?!\s)</string>
+		</dict>
+		<key>error-cases</key>
+		<dict>
+			<key>name</key>
+			<string>error.markdown</string>
+			<key>match</key>
+			<string>(\.\.\.|--|(?&lt;=\s)—|—(?=\s)|"|')</string>
 		</dict>
 		<key>divider</key>
 		<dict>
