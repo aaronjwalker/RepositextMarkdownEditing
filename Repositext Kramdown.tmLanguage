@@ -941,7 +941,7 @@
 		<key>invalid-markers</key>
 		<dict>
 			<key>match</key>
-			<string>(?:(?&lt;=[^\s%@*])(?:%|@)+|(?&lt;=\w)(?:%|@)(?=\w))</string>
+			<string>(?&lt;=\w)(?:[%@]+)(?=\w)</string>
 			<key>name</key>
 			<string>error.markdown</string>
 		</dict>
