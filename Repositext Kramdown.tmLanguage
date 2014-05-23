@@ -926,7 +926,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>%(?=\S)</string>
+					<string>%(?=[^\s@])</string>
 					<key>name</key>
 					<string>markup.marker.percent.markdown</string>
 				</dict>
@@ -2152,6 +2152,12 @@
 					\.\.\.
 					|
 					--
+					|
+					[’“‘—][%@](?=\w)
+					|
+					[.?!][%@](?=[’”])
+					|
+					%@
 					|
 					(?&lt;=\s)—
 					|
