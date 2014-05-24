@@ -1030,15 +1030,15 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#error-cases</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#markers</string>
 				</dict>
 				<dict>
 					<key>include</key>
 					<string>#special-chars</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#error-cases</string>
 				</dict>
 			</array>
 		</dict>
@@ -2153,9 +2153,9 @@
 					|
 					--
 					|
-					[’“‘—][%@](?=\w)
+					[’“‘—](%|@|@%)(?=\w)
 					|
-					[.?!][%@](?=[’”])
+					[.?!](%|@|@%)(?=[’”])
 					|
 					%@
 					|
