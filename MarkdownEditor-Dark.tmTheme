@@ -1077,9 +1077,9 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#aaaa55</string>
+                <string>#FFFFFF</string>
                 <key>background</key>
-                <string>#0268e0</string>
+                <string>#880000</string>
             </dict>
         </dict>
         <dict>
