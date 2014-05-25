@@ -628,7 +628,8 @@
        [
           { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
           { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Auto-pair smart quotes
@@ -636,7 +637,8 @@
        [
           { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Smart quote before word
@@ -646,7 +648,8 @@
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
           { "key": "following_text", "operator": "regex_contains", "operand": "^\\S", "match_all": true },
           { "key": "following_text", "operator": "not_regex_contains", "operand": "^(’|\\)|\\]|-|–|—|=|/)", "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Smart quote after word
@@ -656,7 +659,8 @@
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
           { "key": "preceding_text", "operator": "regex_contains", "operand": "\\S$", "match_all": true },
           { "key": "preceding_text", "operator": "not_regex_contains", "operand": "(‘|”|\\(|\\[|-|–|—|=|/)$", "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Do not overwrite smart quotes with dumb quotes
@@ -665,7 +669,8 @@
           { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
           { "key": "following_text", "operator": "regex_contains", "operand": "^(“|”)", "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Remove paired smart quotes
@@ -675,7 +680,8 @@
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
           { "key": "preceding_text", "operator": "regex_contains", "operand": "“$", "match_all": true },
           { "key": "following_text", "operator": "regex_contains", "operand": "^”", "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     /*** Smart Single Quotes (‘’) ***/
@@ -684,7 +690,8 @@
        [
           { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
           { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Auto-pair smart quotes
@@ -692,7 +699,8 @@
        [
           { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Smart quote before word
@@ -702,7 +710,8 @@
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
           { "key": "following_text", "operator": "regex_contains", "operand": "^\\S", "match_all": true },
           { "key": "following_text", "operator": "not_regex_contains", "operand": "^(”|\\)|\\]|-|–|—|=|/)", "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Smart quote after word
@@ -712,7 +721,8 @@
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
           { "key": "preceding_text", "operator": "regex_contains", "operand": "\\S$", "match_all": true },
           { "key": "preceding_text", "operator": "not_regex_contains", "operand": "(“|’|\\(|\\[|-|–|—|=|/)$", "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Do not overwrite smart quotes with dumb quotes
@@ -721,7 +731,8 @@
           { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
           { "key": "following_text", "operator": "regex_contains", "operand": "^(‘|’)", "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     },
     // Remove paired smart quotes
@@ -731,7 +742,8 @@
           { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
           { "key": "preceding_text", "operator": "regex_contains", "operand": "‘$", "match_all": true },
           { "key": "following_text", "operator": "regex_contains", "operand": "^’", "match_all": true },
-          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+          { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true },
+          { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true }
        ]
     }
 ]
