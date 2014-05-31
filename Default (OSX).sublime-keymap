@@ -757,5 +757,13 @@
           { "key": "selector", "operator": "not_equal", "operand": "meta.attr-list.markdown", "match_all": true },
           { "key": "selector", "operator": "not_equal", "operand": "markup.heading.id.markdown", "match_all": true }
        ]
+    },
+
+    // Em Dash (—)
+    { "keys": ["-", "-"], "command": "insert", "args": {"characters": "—"}, "context":
+        [
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
     }
 ]
