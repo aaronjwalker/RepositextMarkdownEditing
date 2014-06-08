@@ -284,7 +284,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#attr-list</string>
+					<string>#attr-list-inline</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1433,7 +1433,7 @@
 						</dict>
 						<dict>
 							<key>include</key>
-							<string>#attr-list</string>
+							<string>#attr-list-inline</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -1982,6 +1982,40 @@
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.tag.end.html</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>attr-list-inline</key>
+		<dict>
+			<key>name</key>
+			<string>meta.attr-list.markdown</string>
+			<key>match</key>
+			<string>(?x)
+				(?&lt;=[*_`)\]])(\{:([\w\d]\w*:)?\ )
+				((\.pn|\.smcaps|\.italic\ \.smcaps))
+				(?&lt;!\\)(\})
+			</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.attr-list.begin.markdown</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>meta.attr-list.content.markdown</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>meta.attr-list.class.markdown</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.attr-list.end.markdown</string>
 				</dict>
 			</dict>
 		</dict>
