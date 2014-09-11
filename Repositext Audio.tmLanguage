@@ -2178,7 +2178,7 @@
 			<key>match</key>
 			<string>(?x)
 				(
-					%\S*
+					%[^\s…—]*
 				)
 			</string>
 		</dict>
