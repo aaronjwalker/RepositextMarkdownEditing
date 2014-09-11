@@ -26,7 +26,7 @@
 	<key>keyEquivalent</key>
 	<string>^~M</string>
 	<key>name</key>
-	<string>Repositext Kramdown</string>
+	<string>Repositext Audio</string>
 	<key>patterns</key>
 	<array>
 		<dict>
