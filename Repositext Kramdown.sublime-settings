@@ -3,7 +3,8 @@
 	[
 		"md",
 		"mdown",
-		"txt"
+		"txt",
+		"at"
 	],
 
 	// "color_scheme": "Packages/MarkdownEditing/MarkdownEditor.tmTheme",
