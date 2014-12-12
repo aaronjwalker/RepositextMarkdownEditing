@@ -8,7 +8,6 @@
 		<string>markdown</string>
 		<string>markdn</string>
 		<string>md</string>
-		<string>at</string>
 		<string>pt</string>
 	</array>
 	<key>foldingStartMarker</key>
