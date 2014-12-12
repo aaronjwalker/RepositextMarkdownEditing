@@ -595,6 +595,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#warning-cases</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#error-cases</string>
 				</dict>
 			</array>
@@ -1012,6 +1016,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#warning-cases</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#error-cases</string>
 				</dict>
 				<dict>
@@ -1165,6 +1173,10 @@
 				<dict>
 					<key>include</key>
 					<string>#markers</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#warning-cases</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -2204,6 +2216,23 @@
 			<string>punctuation.special</string>
 			<key>match</key>
 			<string>(?&lt;!\s)—(?!\s)</string>
+		</dict>
+		<key>warning-cases</key>
+		<dict>
+			<key>name</key>
+			<string>warning.markdown</string>
+			<key>match</key>
+			<string>(?x)
+				(
+					\w+%…\w+
+					|
+					“%
+					|
+					‘%
+					|
+					%\s+
+				)
+			</string>
 		</dict>
 		<key>error-cases</key>
 		<dict>
