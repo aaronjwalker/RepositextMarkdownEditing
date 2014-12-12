@@ -947,7 +947,7 @@
 			<key>match</key>
 			<string>(?:%|@)(?!\S)</string>
 			<key>name</key>
-			<string>warning.markdown</string>
+			<string>error.markdown</string>
 		</dict>
 		<key>inline</key>
 		<dict>
