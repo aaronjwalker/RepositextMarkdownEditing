@@ -1123,6 +1123,24 @@
         </dict>
         <dict>
             <key>name</key>
+            <string>Attribute List - Green (Class)</string>
+            <key>scope</key>
+            <string>
+                , punctuation.definition.attr-list.begin.green.markdown,
+                , meta.attr-list.content.green.markdown,
+                , meta.attr-list.class.green.markdown,
+                , punctuation.definition.attr-list.end.green.markdown,
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#187516</string>
+                <key>background</key>
+                <string>#072C07</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
             <string>Attribute List (Class)</string>
             <key>scope</key>
             <string>meta.attr-list.class.markdown</string>

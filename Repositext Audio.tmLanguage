@@ -291,6 +291,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#attr-list-block-green</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#invalid-attr-list</string>
 				</dict>
 				<dict>
@@ -1420,6 +1424,10 @@
 						</dict>
 						<dict>
 							<key>include</key>
+							<string>#attr-list-block-green</string>
+						</dict>
+						<dict>
+							<key>include</key>
 							<string>#invalid-attr-list</string>
 						</dict>
 						<dict>
@@ -2012,19 +2020,12 @@
 				(
 					(
 						  .normal
-						| .normal\ .omit
 						| .normal_pn
-						| .normal_pn\ .omit
 						| .scr
-						| .omit\ .scr
 						| .stanza
-						| .omit\ .stanza
 						| .song
-						| .omit\ .song
 						| .q
-						| .omit\ .q
 						| .reading
-						| .omit\ .reading
 						| .id_title1
 						| .id_title2
 						| .id_paragraph
@@ -2053,6 +2054,50 @@
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.attr-list.end.markdown</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>attr-list-block-green</key>
+		<dict>
+			<key>name</key>
+			<string>meta.attr-list.markdown</string>
+			<key>match</key>
+			<string>(?x)
+				(?&lt;=^)(\{:([\w\d]\w*:)?\ )
+				(
+					(
+						  .normal\ .omit
+						| .normal_pn\ .omit
+						| .omit\ .scr
+						| .omit\ .stanza
+						| .omit\ .song
+						| .omit\ .q
+						| .omit\ .reading
+					)
+				)
+				(?&lt;!\\)(\})(?=$)
+			</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.attr-list.begin.green.markdown</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>meta.attr-list.content.green.markdown</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>meta.attr-list.class.green.markdown</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.attr-list.end.green.markdown</string>
 				</dict>
 			</dict>
 		</dict>
