@@ -782,6 +782,10 @@
 			<array>
 				<dict>
 					<key>include</key>
+					<string>#percent-error-in-header</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#inline</string>
 				</dict>
 			</array>
@@ -1172,15 +1176,15 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#markers</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#warning-cases</string>
 				</dict>
 				<dict>
 					<key>include</key>
 					<string>#error-cases</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#markers</string>
 				</dict>
 			</array>
 		</dict>
@@ -2246,6 +2250,17 @@
 			<string>(?x)
 				(
 					%[^\s…—]+
+				)
+			</string>
+		</dict>
+		<key>percent-error-in-header</key>
+		<dict>
+			<key>name</key>
+			<string>error.markdown</string>
+			<key>match</key>
+			<string>(?x)
+				(
+					%
 				)
 			</string>
 		</dict>
