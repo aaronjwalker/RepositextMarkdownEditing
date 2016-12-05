@@ -1998,7 +1998,7 @@
 			<key>match</key>
 			<string>(?x)
 				(?&lt;=[*_`)\]])(\{:([\w\d]\w*:)?\ )
-				((\.pn|\.smcaps|\.italic\ \.smcaps))
+				((\.pn|\.smcaps|\.italic\ \.smcaps|\.superscript|\.subscript|\.bold\ \.italic|\.line_break))
 				(?&lt;!\\)(\})
 			</string>
 			<key>captures</key>
@@ -2034,11 +2034,20 @@
 				(?&lt;=^)(\{:([\w\d]\w*:)?\ )
 				(
 					(
-						  .normal
+						  .decreased_word_space\ .normal
+						| .decreased_word_space\ .normal_pn
+						| .first_par\ .normal
+						| .first_par\ .stanza
+						| .increased_word_space\ .normal
+						| .increased_word_space\ .normal_pn
+						| .indent_for_eagle\ .normal
+						| .indent_for_eagle\ .normal_pn
+						| .normal
 						| .normal_pn
 						| .scr
 						| .stanza
 						| .song
+						| .song_break
 						| .q
 						| .reading
 						| .id_title1
