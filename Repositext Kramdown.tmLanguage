@@ -1998,7 +1998,7 @@
 			<key>match</key>
 			<string>(?x)
 				(?&lt;=[*_`)\]])(\{:([\w\d]\w*:)?\ )
-				((\.pn|\.smcaps|\.italic\ \.smcaps|\.superscript|\.subscript|\.bold\ \.italic|\.line_break))
+				((\.pn|\.smcaps|\.italic\ \.smcaps|\.superscript|\.italic\ \.superscript|\.subscript|\.bold\ \.italic|\.line_break))
 				(?&lt;!\\)(\})
 			</string>
 			<key>captures</key>
