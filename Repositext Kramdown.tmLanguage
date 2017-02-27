@@ -2052,6 +2052,7 @@
 						| .reading
 						| .id_title1
 						| .id_title2
+						| .id_title3
 						| .id_paragraph
 					)
 				)
